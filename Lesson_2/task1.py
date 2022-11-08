@@ -1,15 +1,11 @@
-string =list(input("Enter your string:" ))
-list.sort(string)
-for elements in range(len(string)):
-#count_e-count of elements
-    count_e = 0
-    if string[elements] != string[elements-1]:
-        for letters in range(len(string)):
-            if string[elements] == string[letters]:
-                count_e = count_e + 1
-#character count
-            if letters + 1 == len(string):
-                print(string[elements], '-', count_e)
+input_list = (input("Enter your string"))
+set_list = sorted(set(input_list))
+print(set_list)
+for index in set_list:
+    count_i = input_list.count(index)
+    print(index, '=', count_i, end=' ')
+
+
 
 
 
