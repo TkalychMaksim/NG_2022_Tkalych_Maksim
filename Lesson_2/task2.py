@@ -1,5 +1,4 @@
-string_input = input('Enter your list:').split(',')
-list_set = list(set(string_input))
-print(list_set)
+string_input = sorted(set(input('Enter your string:').split(',')))
+print(string_input)
 
 
