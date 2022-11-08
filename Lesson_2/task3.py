@@ -1,7 +1,7 @@
-current_number = int(input('Enter your number: '))
-for i in range(current_number):
-    for j in range(current_number-i):
-        print(current_number-j-i, end=' ')
+input_number = int(input('Enter your number: '))
+for first_index in range(input_number):
+    for second_index in range(input_number-first_index):
+        print(input_number-second_index-first_index, end=' ')
     print('')
 
 
