@@ -8,9 +8,6 @@ print('The maximum value is: ' + str(max(int_list)))
 print('The minimum value is: ' + str(min(int_list)))
 
 int_list.sort()
-summ = 0
-for element in int_list:
-    if element != int_list[0] and element != int_list[-1]:
-        summ = summ + element
+summ = sum(int_list[1:-1])
 print('Sum equals: ', summ)
 
